@@ -1,34 +1,45 @@
-let character = 'Alex';
-let age = 30;
-let isBlackBelt = false;
+// explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
 
-const circ = (diameter: number) => {
-    return diameter * Math.PI;
-}
+// age = 'test';
+age = 30;
+isLoggedIn = true;
 
-console.log(circ(17))
+// arrays
+let ninjas: string[] = [];
 
-// Arrays
-let names = ['Giv', 'Alex', 'Freddie'];
+// let ninjas = [10, 23];
+// ninjas = ['alex', '23'];
+ninjas.push('Giv');
 
-names.push('Brian');
-// names.push(20);
+// union types
+let mixed: (string|number)[] = []; 
+mixed.push('hello');
+mixed.push(20);
+console.log(mixed);
 
-let numbers = [10, 20, 30];
-numbers.push(25);
-// numbers.push('test');
+let uid: string|number;
+uid = 123;
+uid = 'a23';
 
-let mixed = ['John', 29, 'Roger', 50];
-mixed.push(60);
-mixed.push('bill');
+// objects
 
-// Objects
-let ninja = {
-    name: 'mario',
-    belt: 'black',
+let ninjaOne: object;
+ninjaOne = {
+    name: 'Alex',
     age: 30
 }
 
-ninja.age = 40;
-ninja.name = 'yoshi';
-// ninja.age = 'ten';
+let ninjaTwo: {
+    name: string,
+    age: number,
+    belt: string
+}
+
+ninjaTwo = {
+    name: 'mario',
+    age: 20,
+    belt: 'black'
+}

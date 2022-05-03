@@ -1,26 +1,32 @@
-var character = 'Alex';
-var age = 30;
-var isBlackBelt = false;
-var circ = function (diameter) {
-    return diameter * Math.PI;
-};
-console.log(circ(17));
-// Arrays
-var names = ['Giv', 'Alex', 'Freddie'];
-names.push('Brian');
-// names.push(20);
-var numbers = [10, 20, 30];
-numbers.push(25);
-// numbers.push('test');
-var mixed = ['John', 29, 'Roger', 50];
-mixed.push(60);
-mixed.push('bill');
-// Objects
-var ninja = {
-    name: 'mario',
-    belt: 'black',
+// explicit types
+var character;
+var age;
+var isLoggedIn;
+// age = 'test';
+age = 30;
+isLoggedIn = true;
+// arrays
+var ninjas = [];
+// let ninjas = [10, 23];
+// ninjas = ['alex', '23'];
+ninjas.push('Giv');
+// union types
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+console.log(mixed);
+var uid;
+uid = 123;
+uid = 'a23';
+// objects
+var ninjaOne;
+ninjaOne = {
+    name: 'Alex',
     age: 30
 };
-ninja.age = 40;
-ninja.name = 'yoshi';
-// ninja.age = 'ten';
+var ninjaTwo;
+ninjaTwo = {
+    name: 'mario',
+    age: 20,
+    belt: 'black'
+};
